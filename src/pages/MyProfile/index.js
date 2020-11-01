@@ -12,8 +12,8 @@ export const MyProfile = () => {
       const result = await axios(`https://api.github.com/users/aggieN`);
       setName(result.data.name);
       /* setTimeOut function was used in order to show off my loader as the data was loading too fast */
-      setTimeout(() => setPhoto(result.data.avatar_url), 2500);
-      return () => clearTimeout();
+      const load = setTimeout(() => setPhoto(result.data.avatar_url), 2500);
+      return () => clearTimeout(load);
     };
     fetchData();
   }, []);

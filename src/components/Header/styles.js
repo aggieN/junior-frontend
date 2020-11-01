@@ -18,14 +18,13 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-export const NavList = styled.ul`
+export const NavList = styled.div`
   display: flex;
   justify-content: space-between;
-  list-style: none;
   padding: 0.5rem 1rem;
   width: 10rem;
 `;
-export const NavItem = styled.li`
+export const NavItem = styled.a`
   font-size: ${({ theme }) => theme.font.size.md};
   text-decoration: none;
   color: ${({ theme }) => theme.color.black};
