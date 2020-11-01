@@ -25,5 +25,9 @@ export const GlobalStyle = createGlobalStyle`
   html {
     font-family: TTCommons-regular,sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 `;

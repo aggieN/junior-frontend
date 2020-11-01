@@ -47,28 +47,20 @@ const DotsWrapper = styled.div`
   align-items: center;
 `;
 
-const Dot1 = styled.div`
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  background-color: ${({ theme }) => theme.color.black};
-  animation: ${bounce} 1.5s infinite ease-in-out;
-  animation-delay: -0.3s;
-`;
-const Dot2 = styled.div`
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  background-color: ${({ theme }) => theme.color.black};
-  animation: ${bounce} 1.5s infinite ease-in-out;
-  animation-delay: -0.15s;
-`;
 const Dot3 = styled.div`
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background-color: ${({ theme }) => theme.color.black};
   animation: ${bounce} 1.5s infinite ease-in-out;
+`;
+
+const Dot1 = styled(Dot3)`
+  animation-delay: -0.3s;
+`;
+
+const Dot2 = styled(Dot3)`
+  animation-delay: -0.15s;
 `;
 
 export const Loader = () => (
