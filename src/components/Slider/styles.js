@@ -15,7 +15,6 @@ export const SliderContainer = styled.div`
 `;
 
 export const SlideShow = styled.div`
-  animation: ${slide} 40s linear infinite;
   display: flex;
   flex-direction: row-reverse;
 `;
@@ -25,4 +24,5 @@ export const Slide = styled.img`
   height: auto;
   margin: 0 1rem;
   border-radius: 2rem;
+  animation: ${slide} 25s linear infinite;
 `;
